@@ -5,7 +5,7 @@ When implementing a file system for a React project, it's crucial to adhere to a
 Below are the best practices and details of a typical file system for a React application:
 ________________________________________
 
-1. Project Folder Structure
+1. ## Project Folder Structure
 
      Here’s a standard file structure used in React projects:
 ```   
@@ -80,7 +80,7 @@ ________________________________________
      * Example: App.test.js, useFetch.test.js.    
 ________________________________________
   
-2. Naming Conventions File Names  
+2. ## Naming Conventions File Names  
 - Use PascalCase for components and pages:  
      * Example: MyComponent.js, UserProfile.js.  
 - Use camelCase for hooks, services, and utilities:
@@ -91,7 +91,7 @@ ________________________________________
      
 ________________________________________  
   
-3. Component Structure Functional Components Prefer functional components with hooks over class components for cleaner and more modern syntax.  
+3. ## Component Structure Functional Components Prefer functional components with hooks over class components for cleaner and more modern syntax.  
   
 One File Per Component  
 - Each component should have its own file for modularity:  
@@ -109,7 +109,7 @@ Collocated Files
 ________________________________________  
   
   
-4. File System Standards  
+4. ## File System Standards  
   
 Separation of Concerns  
 - Keep concerns separate (e.g., UI vs. business logic vs. API calls).
@@ -131,7 +131,7 @@ Use Index Files
 ________________________________________  
   
   
-5. Code Style Guidelines  
+5. ## Code Style Guidelines  
    Consistent Syntax  
 - Follow ESLint rules for consistency.  
 - Use Prettier for code formatting.  
@@ -149,7 +149,7 @@ ________________________________________
      
 ________________________________________  
   
-6. Scalability Tips  
+6. ## Scalability Tips  
 - Modular Components: Keep components small and focused on a single responsibility.  
 - Feature-Driven Structure: For large projects, group files by feature/module:  
 ```             bash  
