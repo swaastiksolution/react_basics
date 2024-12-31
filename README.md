@@ -118,7 +118,7 @@ Separation of Concerns
 Use Index Files  
 - Use index.js files to re-export multiple modules for easier imports.  
      * Example:
-       ```  
+```  
                // /components/common/index.js  
                export { default as Button } from './Button';  
                export { default as Modal } from './Modal';  
