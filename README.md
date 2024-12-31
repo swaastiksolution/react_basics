@@ -4,37 +4,42 @@ When implementing a file system for a React project, it's crucial to adhere to a
 
 Below are the best practices and details of a typical file system for a React application:
 ________________________________________
+
 1. Project Folder Structure
-Here’s a standard file structure used in React projects:
-bash
-Copy code
-/src
-  /assets
-    /images
-    /styles
-    /fonts
-  /components
-    /common
-    /layout
-    /specific-feature
-  /pages
-    HomePage.js
-    AboutPage.js
-  /hooks
-  /context
-  /services
-  /utils
-  /store
-  /tests
-index.js
-App.js
-package.json
-Breakdown:
+
+     Here’s a standard file structure used in React projects:
+     bash
+     Copy code
+     /src
+       /assets
+         /images
+         /styles
+         /fonts
+       /components
+         /common
+         /layout
+         /specific-feature
+       /pages
+         HomePage.js
+         AboutPage.js
+       /hooks
+       /context
+       /services
+       /utils
+       /store
+       /tests
+     index.js
+     App.js
+     package.json
+     Breakdown:
+
 1.1 src
    •	Main folder containing the core of your application. Keep it clean and modular.
+
 1.2 assets
    •	For static files such as images, fonts, or global styles.
    •	Subfolders for logical grouping, like /images for media files or /styles for global CSS.
+
 1.3 components
    •	Houses reusable React components.
    •	Subfolders organize components by type or feature.
@@ -42,32 +47,39 @@ Breakdown:
        o	/layout: Layout components like headers, footers, or sidebars.
        o	/specific-feature: Components related to a particular feature (e.g., a dashboard).
 
+
 1.4 pages
    •	Contains top-level page components.
        o	Example: HomePage.js, AboutPage.js.
    •	Each page acts as a container, importing and using components from /components.
+
 1.5 hooks
    •	Stores custom React hooks for managing reusable logic.
        o	Example: useFetch.js, useAuth.js.
+
 1.6 context
    •	For React Context API implementation, which manages global state.
        o	Example: AuthContext.js, ThemeContext.js.
+
 1.7 services
    •	Contains API calls or external data-fetching logic.
        o	Example: authService.js, productService.js.
    •	Keeps API integration separated from component logic.
+
 1.8 utils
    •	For reusable utility functions or helpers.
        o	Example: formatDate.js, validateEmail.js.
+
 1.9 store
    •	For state management tools like Redux, Zustand, or MobX (if used).
        o	Example: authSlice.js, cartSlice.js.
+
 1.10 tests
    •	Contains unit tests, integration tests, and end-to-end tests for components and logic.
        o	Example: App.test.js, useFetch.test.js.
 ________________________________________
-2. Naming Conventions
-File Names
+
+2. Naming Conventions File Names
    •	Use PascalCase for components and pages:
        o	Example: MyComponent.js, UserProfile.js.
    •	Use camelCase for hooks, services, and utilities:
@@ -76,9 +88,10 @@ Folder Names
    •	Use kebab-case or camelCase for directories:
        o	Example: /components/common, /hooks/useFetch.
 ________________________________________
-3. Component Structure
-Functional Components
+
+3. Component Structure Functional Components
 Prefer functional components with hooks over class components for cleaner and more modern syntax.
+
 One File Per Component
    •	Each component should have its own file for modularity:
        o	MyComponent.js
@@ -91,7 +104,9 @@ One File Per Component
             MyComponent.css
             MyComponent.test.js
 ________________________________________
+
 4. File System Standards
+
 Separation of Concerns
    •	Keep concerns separate (e.g., UI vs. business logic vs. API calls).
    •	Example: Fetch data in a service file, not inside components.
