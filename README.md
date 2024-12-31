@@ -8,7 +8,8 @@ ________________________________________
      Here’s a standard file structure used in React projects:  
 
 ```     
-          /src  
+          /src
+            /validations
             /assets  
               /images  
               /styles  
